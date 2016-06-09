@@ -8,7 +8,7 @@ ENV BUILD_DEPS autoconf curl gcc make libtool libssl-dev
 RUN apt-get update \
  && apt-get install -y $BUILD_DEPS
 
-ENV BUILD_VER 2.4.1
+ENV BUILD_VER 2.4.7
 RUN BUILD_SRC=https://github.com/shadowsocks/shadowsocks-libev/archive/v$BUILD_VER.tar.gz \
  && BUILD_DIR=shadowsocks-libev-$BUILD_VER \
  && curl -sSL $BUILD_SRC | tar xz \
