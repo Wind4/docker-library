@@ -1,7 +1,7 @@
 #
 # Dockerfile for vlmcsd
 #
-FROM alpine:3.2
+FROM alpine:3.4
 MAINTAINER Wind4 <puxiaping@gmail.com>
 
 RUN apk add --update curl \
